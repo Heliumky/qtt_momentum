@@ -1,0 +1,79 @@
+2D soft-Coulomb atom: H = -1/2(d²/dx²+d²/dy²) - Z/sqrt(r²+epsilon)
+N_list                   = [10, 10]
+Fourier modes            = 1024 x 1024
+domain                    = [-1000.0, 1000.0) x [-1000.0, 1000.0)
+charge Z                 = 1.0000
+softening epsilon        = 1.000000e-08
+softening length sqrt(epsilon) = 1.000000e-04
+potential coefficients   = requested closed form (nonzero mode), exact finite-box C00
+kinetic MPO max bond dim (dim 1)   = 3
+kinetic MPO max bond dim (dim 2)   = 3
+potential MPO max bond dim (non-separable) = 69
+Hamiltonian MPO max bond dim  = 73
+ground-state MPS max bond dim = 6
+TCI requested tolerance       = 1.000000e-10
+TCI estimated relative error  = 9.596107e-11
+TCI target evaluations        = 765297
+DMRG requested cutoff         = 1.000000e-08
+DMRG max truncation error     = 9.752811e-09
+DMRG truncation error/sweep   = [8.341572204585527e-9, 7.3215775571235664e-9, 9.609765657070553e-9, 9.752811072295833e-9, 9.741136413816621e-9, 9.74104667502034e-9, 9.741045940669982e-9, 9.741046320906409e-9, 9.741045993971183e-9, 9.741046126721685e-9, 9.741045947124285e-9, 9.741046316469619e-9, 9.741046100675394e-9, 9.741046019231561e-9, 9.741046100147302e-9, 9.741045878628855e-9, 9.741046095125884e-9, 9.741046000351501e-9, 9.74104589256276e-9, 9.74104601698686e-9]
+real-space reconstruction = disabled
+real-space plotting       = disabled
+ground-state MPS tensor shapes:
+  A_1 = (1, 2, 2)
+  A_2 = (2, 2, 2)
+  A_3 = (2, 2, 2)
+  A_4 = (2, 2, 2)
+  A_5 = (2, 2, 3)
+  A_6 = (3, 2, 3)
+  A_7 = (3, 2, 4)
+  A_8 = (4, 2, 4)
+  A_9 = (4, 2, 5)
+  A_10 = (5, 2, 3)
+  A_11 = (3, 2, 4)
+  A_12 = (4, 2, 5)
+  A_13 = (5, 2, 5)
+  A_14 = (5, 2, 5)
+  A_15 = (5, 2, 5)
+  A_16 = (5, 2, 5)
+  A_17 = (5, 2, 6)
+  A_18 = (6, 2, 4)
+  A_19 = (4, 2, 2)
+  A_20 = (2, 2, 1)
+Hamiltonian MPO tensor shapes:
+  W_1 = (1, 2, 2, 7)
+  W_2 = (7, 2, 2, 11)
+  W_3 = (11, 2, 2, 19)
+  W_4 = (19, 2, 2, 31)
+  W_5 = (31, 2, 2, 41)
+  W_6 = (41, 2, 2, 49)
+  W_7 = (49, 2, 2, 57)
+  W_8 = (57, 2, 2, 66)
+  W_9 = (66, 2, 2, 73)
+  W_10 = (73, 2, 2, 30)
+  W_11 = (30, 2, 2, 54)
+  W_12 = (54, 2, 2, 48)
+  W_13 = (48, 2, 2, 43)
+  W_14 = (43, 2, 2, 37)
+  W_15 = (37, 2, 2, 33)
+  W_16 = (33, 2, 2, 27)
+  W_17 = (27, 2, 2, 19)
+  W_18 = (19, 2, 2, 11)
+  W_19 = (11, 2, 2, 7)
+  W_20 = (7, 2, 2, 1)
+
+DMRG E0                  = -1.03028918471304
+<Tx>                      = 0.19213102229383
+<Ty>                      = 0.19213096851178
+<V>                       = -1.41455117551865
+<T> + <V>                = -1.03028918471304
+energy self-consistency error = 2.220e-16
+virial ratio -<V>/<T>    = 3.681215  (isolated unregularized limit: exactly 2)
+
+isolated unregularized 2D hydrogen reference: E_0 = -2
+the reference is approached only after a joint convergence check:
+epsilon -> 0, Fourier cutoff -> infinity, and half_width -> infinity
+
+real-space diagnostics   = disabled
+energy self-consistency tolerance = 2.020e-07
+validation                = PASS
