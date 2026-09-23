@@ -1,0 +1,18 @@
+name = "QTTDFT"
+uuid = "3c1f6a52-8d4e-4b7a-9e21-5a0d7c9b1e44"
+version = "0.1.0"
+
+[deps]
+ITensorMPS = "0d1a4710-d33b-49a5-8f18-73bdf49b47e2"
+ITensors = "9136182c-28ba-11e9-034c-db9fb085ebd5"
+QuanticsTCI = "b11687fd-3a1c-4c41-97d0-998ab401d50e"
+TensorCrossInterpolation = "b261b2ec-6378-4871-b32e-9173bb050604"
+
+[compat]
+QuanticsTCI = "0.7.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
