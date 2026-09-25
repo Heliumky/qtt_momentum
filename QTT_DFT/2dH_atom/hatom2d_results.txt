@@ -1,0 +1,81 @@
+2D (soft-)Coulomb atom: H = -1/2(d²/dx²+d²/dy²) - Z/sqrt(r²+epsilon)  (DFT potential)
+N_list                   = [8, 8]
+Fourier modes            = 256 x 256
+domain                    = [-16.0, 16.0) x [-16.0, 16.0)
+charge Z                 = 1.0000
+softening epsilon        = 0.000000e+00
+softening length sqrt(epsilon) = 0.000000e+00
+potential                = grid samples, V_k = U diag(V) U† (quantics DFT MPO)
+potential sampling       = cell_average
+DMRG initial guess       = exponential
+grid offsets (cells)     = [0.5, 0.5]
+grid spacing             = 1.250000e-01 x 1.250000e-01
+real-space V MPO max bond dim = 37
+joint DFT MPO max bond dim    = 12
+U V U† compression cutoff     = 1.0e-26
+kinetic MPO max bond dim (dim 1)   = 3
+kinetic MPO max bond dim (dim 2)   = 3
+potential MPO max bond dim (non-separable) = 72
+Hamiltonian MPO max bond dim  = 76
+ground-state MPS max bond dim = 11
+TCI requested tolerance       = 1.000000e-10
+TCI estimated relative error  = 6.976463e-11
+TCI global error estimate     = 1.171970e-10
+TCI target evaluations        = 20135
+DMRG requested cutoff         = 1.000000e-08
+DMRG max truncation error     = 9.728610e-09
+DMRG truncation error/sweep   = [8.204840364241219e-9, 8.974992839486441e-9, 9.728610463788636e-9, 6.44291742480516e-9, 6.448233158934049e-9, 6.4482390114399725e-9, 6.447205624799903e-9, 6.445878167417499e-9, 6.444506960094892e-9, 6.443198621311217e-9, 6.441988488279e-9, 6.440883913857323e-9, 6.4398846249828535e-9, 6.43898531003338e-9, 6.438178474269487e-9, 6.437455522662116e-9, 6.436808403080222e-9, 6.436229145375805e-9, 6.435710373499153e-9, 6.435246150178685e-9]
+real-space plot points   = 121 x 121
+ground-state MPS tensor shapes:
+  A_1 = (1, 2, 2)
+  A_2 = (2, 2, 4)
+  A_3 = (4, 2, 5)
+  A_4 = (5, 2, 6)
+  A_5 = (6, 2, 8)
+  A_6 = (8, 2, 9)
+  A_7 = (9, 2, 10)
+  A_8 = (10, 2, 6)
+  A_9 = (6, 2, 10)
+  A_10 = (10, 2, 11)
+  A_11 = (11, 2, 11)
+  A_12 = (11, 2, 9)
+  A_13 = (9, 2, 6)
+  A_14 = (6, 2, 4)
+  A_15 = (4, 2, 2)
+  A_16 = (2, 2, 1)
+Hamiltonian MPO tensor shapes:
+  W_1 = (1, 2, 2, 7)
+  W_2 = (7, 2, 2, 11)
+  W_3 = (11, 2, 2, 19)
+  W_4 = (19, 2, 2, 40)
+  W_5 = (40, 2, 2, 71)
+  W_6 = (71, 2, 2, 76)
+  W_7 = (76, 2, 2, 46)
+  W_8 = (46, 2, 2, 23)
+  W_9 = (23, 2, 2, 50)
+  W_10 = (50, 2, 2, 45)
+  W_11 = (45, 2, 2, 32)
+  W_12 = (32, 2, 2, 20)
+  W_13 = (20, 2, 2, 12)
+  W_14 = (12, 2, 2, 8)
+  W_15 = (8, 2, 2, 6)
+  W_16 = (6, 2, 2, 1)
+
+DMRG E0                  = -1.89131613454890
+<Tx>                      = 0.86508411099214
+<Ty>                      = 0.86507453764618
+<V>                       = -3.62147478318713
+<T> + <V>                = -1.89131613454881
+energy self-consistency error = 9.104e-14
+virial ratio -<V>/<T>    = 2.093146  (isolated unregularized limit: exactly 2)
+
+isolated unregularized 2D hydrogen reference: E_0 = -2
+the reference is approached only after a joint convergence check:
+epsilon -> 0, Fourier cutoff -> infinity, and half_width -> infinity
+
+density normalization (native grid) = 1.00000000000000  (exact 1)
+max imaginary component (native grid) = 4.058e-05
+x<->y transpose asymmetry (native grid) = 1.198e-04
+energy self-consistency tolerance = 2.020e-07
+density/symmetry tolerance         = 1.005e-03
+validation                = PASS
